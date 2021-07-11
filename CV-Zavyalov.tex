@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{hyperref}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Anton Zavyalov} % Your name
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{+7 960 956 61 14 \\ megadeathlightsaber@gmail.com} % Your phone number and email
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Bachelor of Software Engineering} \\ Polzunov Altai State Technical University, Barnaul \hfill {September 2017 - July 2021}
+
+Faculty of Information Technologies
+\\Speciality 09.03.04 --- Software Engineering
+
+{\bf Bachelor thesis} \\ Design of visual functional language with recursion optimization capabilities,
+\\ supervised by associate professor Sergey Mikhailovich Starlovetov \\
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%\begin{rSection}{Programming background}
+%I have been programming since I was 11. At first I was interested in modding and game development, so my first programming languages were Lua, C\# and Haxe (Google it, it's awesome!).
+
+%From the first year in university I am interested in the theory of programming languages and functional programming. I am familiar with such languages as Scheme, Haskell, OCaml and others. Obviously, my main interests are system programming and programming language design. My experience in programming language development includes a simple LISP interpreter with nested scope and higher order functions; an interpreter of a C-like language  and LLVM-powered compiler for it.
+
+%My interests do not contradict the fact that I am open to any interesting job offers. A big bonus if the offer is related to functional programming and programming language theory. ;)
+%\end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Personal Projects}
+\item \begin{rSubsection}{Flovver}{January 2021 - June 2021}{}{}
+Visual functional programming language and rapid application development environment. Subject of my bachelor thesis in Polzunov Altai State Technical University.
+
+Thesis includes the following points:
+\begin{itemize}
+    \item Analysis of technologies and algorithms of recursion optimization in compilers.
+    \item Design of visual functional programming language.
+    \item Design and implementation of optimizing compiler and IDE for proposed language.
+\end{itemize}
+
+All the works were done by me with the use of \textit{Scala} and \textit{Svelte}.
+
+URL: \url{https://github.com/flovver}
+\end{rSubsection}
+    
+\item \begin{rSubsection}{evply --- Graphical LISP Interpreter}{May 2019}{}{}
+The goal of this project is to make symbolic computations more symbolic. You have a workspace where you can place and move primitives: numbers, lines, images, functions, etc. You select these primitives, click the button on the toolbar --- and the selected objects are grouped into a symbolic expression.
+
+A prototype of \textit{evply} was developed for Hackathon Barnaul 2019.
+
+As a part of team, I designed the language and developed an interpreter for it.
+
+URL: \url{https://github.com/andiogenes/evply}
+
+Slides: \url{https://raw.githubusercontent.com/andiogenes/evply/media/slides.pdf}
+\end{rSubsection}
+
+\item \begin{rSubsection}{Daria}{June 2020}{}{}
+Toy programming language with naive pattern matching design and implementation.
+
+URL: \url{https://github.com/andiogenes/daria}
+\end{rSubsection}
+
+\item \begin{rSubsection}{The Carrot programming language}{March 2021}{}{}
+Experimental concatenative programming language with interpreter written in OCaml.
+
+URL: \url{https://github.com/andiogenes/carrot}
+\end{rSubsection}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\clearpage
+
+\begin{rSection}{Computer Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages \ & Scala, Kotlin, Java, Go, C++, Python \\
+Software \& Tools & Linux, Git, Docker \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\item \begin{rSubsection}{Stackeer.io}{December 2019 - April 2020}{Backend Developer}{Barnaul}
+I worked on UnReview --- ML-based recommendation system intended to select reviewers for PRs 
+from among the contributors.
+
+Working with Stackeer.io, I made the following things:
+\begin{itemize}
+    \item Implement a number of microservices in Go. Microservices are connected by REST and gRPC and
+are managed by an orchestration system.
+    \item Create a command line tool to fetch data about repositories with GitHub GraphQLv4.
+    \item Refactor a legacy library consisting of one class with a large number of methods and fields. To do this, I wrote an ad-hoc tool that traverses an AST and emits a call graph. Next, this graph is rendered through GraphViz and I can see how to perform refactoring.
+\end{itemize}
+\end{rSubsection}
+
+\item \begin{rSubsection}{Manpower for Huawei}{July 2020 - Present}{Assistant Engineer}{Novosibirsk}
+Work on JVM and compiler related stuff at Excelsior Team.
+\end{rSubsection}
+
+
+\end{rSection}
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Academic Achievements} 
+\begin{itemize}
+\item {Member of the competitive programming team in Polzunov Altai State Technical University in 2018-2020.
+
+Participated in ICPC 2019-2020, NERC --- Northern Eurasia Finals. Siberian and Far-Eastern Site. Our team took 162th place out of 250 in the global standings (16th out of 49 in the regional standings).}
+\item Took 2nd place in the 18th All-Russian Scientific and Technical Conference of Students, Postgraduates and Young Scientists "Nauka I Molodezh" in the "Software Engineering" subsection of the "Information Technologies" section. 
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Publications}
+\begin{itemize}
+    \item Zavyalov, A. Design of visual functional language with recursion description capabilities. / "Nauka I Molodezh": Materials of 18th All-Russian Scientific and Technical Conference of Students, Postgraduates and
+    Yong Scientists
+\end{itemize}
+\end{rSection}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+\item Received a special award (Bitcoin-shaped chocolate bar) at Hackathon Barnaul 2019.
+\item Played bass in a post-metal band called \href{https://sunhurt.bandcamp.com/}{Sunhurt} in 2019.
+\item Linux ricing enthusiast.
+
+\end{rSection}
+
+\begin{rSection}{Personal Traits}
+\item Highly motivated and eager to learn new things.
+\item Ability to work as an individual as well as in group.
+\end{rSection}
+\end{document}
